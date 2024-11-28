@@ -13,25 +13,24 @@
     </rootEnvironmentConfig>
     <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
     <serverSettings ghRepositoryURL="http://10.10.10.10:7819/RTCP"
-        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!4ac3" trustStorePath="">
+        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!b10f" trustStorePath="">
         <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
             <connectionParams ZOSEnv="false"
                 dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
-                dpsOption="false" dpsPass="#com.ghc.1!ec34" dpsUser=""
+                dpsOption="false" dpsPass="#com.ghc.1!c98b" dpsUser=""
                 driverClass="com.ibm.db2.jcc.DB2Driver"
-                password="#com.ghc.1!33e6128B4ACF446AE348A2E17278117F55240CF06A4140F7211A"
-                url="jdbc:db2://10.0.2.15.nip.io:50000/vresults" user="db2inst1">
+                password="#com.ghc.1!85ae" url="" user="">
                 <dpsSsl useSsl="false"/>
                 <stubSettings maxProcCallCount="10000"
                     maxResultSetRowCount="10000" maxRowCount="10000"
-                    password="#com.ghc.1!e179"
+                    password="#com.ghc.1!36b8"
                     procedureLearningBehaviour="1" schema="" url=""
                     useIntegratedDB="true" useSsl="false" user=""/>
                 <storedProcedureFilter catalogFilterEnabled="false"
                     catalogFilterPattern=""
                     procedureFilterEnabled="false"
                     procedureFilterPattern="" schemaFilterEnabled="true"
-                    schemaFilterPattern="db2inst1"
+                    schemaFilterPattern=""
                     storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
                 <timestampFormatting timestampFormatZero="false"
                     timestampFormattingEnabled="false" timestampPrecision="9"/>
@@ -40,11 +39,11 @@
         </dbConnectionParameters>
         <automationServer enabled="false" projectId="1150"
             projectName="Emerald" publishResults="true"
-            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!bf12"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!fa62"
             trustStorePath="" url="https://10.0.2.15.nip.io:443"/>
     </serverSettings>
     <permissionsSettings ADtrustSource="NONE"
-        ADtrustStorePassword="#com.ghc.1!941a" ADtrustStorePath=""
+        ADtrustStorePassword="#com.ghc.1!6b36" ADtrustStorePath=""
         autoLogin="true" host="AP-PNP-DC02"
         permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
     <resultPublishers disableAll="false">
