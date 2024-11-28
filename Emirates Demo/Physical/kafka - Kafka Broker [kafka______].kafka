@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1702041956912"
+    createdUser="STUART.WALKER" id="-4ed66186:18c3b5e68b4:-14e8"
+    selfDescribing="kafka - Kafka Broker [kafka://?:?]"
+    type="kafka_transport" updatedTimestamp="1702041956912"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="kafka" transportTemplateName="kafka"/>
+</editableResource>

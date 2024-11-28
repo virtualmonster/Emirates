@@ -1,0 +1,8 @@
+"replyId","city","from","to","number","postcode","region","street","town","name","rate"
+"1","Barcelona","2023-02-17T15:22:51.483Z","2023-02-17T15:22:51.483Z","589-591","08014","Catalonia","Carrer Vermell","Barcelona","Downtown Hotel","235.0"
+"1","Barcelona","2023-02-17T15:22:51.483Z","2023-02-17T15:22:51.483Z","230","08005","Catalonia","Carrer Blau","Barcelona","Global Hotel","189.6"
+"1","Barcelona","2023-02-17T15:22:51.483Z","2023-02-17T15:22:51.483Z","111","08002","Catalonia","Carrer Verd","Barcelona","Superior Hotel","200.0"
+"2","London","2023-02-17T15:23:08.867Z","2023-02-17T15:23:08.867Z","NULL","NULL","NULL","NULL","NULL","NULL","NULL"
+"3","Edinburgh","2023-02-17T15:23:20.888Z","2023-02-17T15:23:20.888Z","NULL","EH61 2AB","Scotland","Red Street","Edinburgh","Superior Hotel","234.5"
+"3","Edinburgh","2023-02-17T15:23:20.888Z","2023-02-17T15:23:20.888Z","107","EH64 3HL","Scotland","Blue Street","Edinburgh","Uptown Hotel","189.6"
+"3","Edinburgh","2023-02-17T15:23:20.888Z","2023-02-17T15:23:20.888Z","53","EH62 2DG","Scotland","Green Street","Edinburgh","Global Hotel","200.0"

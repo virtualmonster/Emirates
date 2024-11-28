@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1678798550486"
+    createdUser="STUART.WALKER" id="-2e526b70:186e010d0fd:-2732"
+    selfDescribing="CAMEL - Camel Component []" type="camel_transport"
+    updatedTimestamp="1678798550486" updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="CAMEL" transportTemplateName="camel"/>
+</editableResource>

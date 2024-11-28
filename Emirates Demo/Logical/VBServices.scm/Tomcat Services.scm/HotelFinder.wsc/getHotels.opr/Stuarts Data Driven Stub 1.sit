@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1688634603194"
+    createdUser="STUART.WALKER" id="-3ba60fce:18927d4e6fd:-472b"
+    type="simple_test_data" updatedTimestamp="1688635010645"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" columnCount=""
+        datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true"
+        hasColumnNamesLine="true" linesBeforeColumnNames="0"
+        linesToSkip="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/Logical/VBServices.scm/Tomcat Services.scm/HotelFinder.wsc/getHotels.opr/Stuarts Data Driven Stub 1.csv"
+        loop="false" paddingChar="" parsingType="OffsetLength"
+        separator="," treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="true" treatTextAsNullValue="NULL" trim="false"/>
+</editableResource>

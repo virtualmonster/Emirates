@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1647940737371"
+    createdUser="STUART.WALKER" id="41a0f98d:17f9783e3b1:35ce"
+    selfDescribing="mongo - MongoDB Database [mongodb://?:?]"
+    type="mongo_transport" updatedTimestamp="1647940737371"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="mongo" transportTemplateName="mongo"/>
+</editableResource>

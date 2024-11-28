@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1713433067267"
+    createdUser="STUART.WALKER" id="19ecb031:18eebd5a1b2:-127d"
+    selfDescribing="Unknown database (DB) [, ]"
+    type="database_connection_resource" updatedTimestamp="1713433067267"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="" poolName="DefaultPoolName" transportName="DB">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsOption="false" dpsPass="#com.ghc.1!8476" dpsUser=""
+            driverClass="" password="#com.ghc.1!1add" schema="" url="" user="">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!427c"
+                procedureLearningBehaviour="1" schema="" url=""
+                useIntegratedDB="true" useSsl="false" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+            <proxy useProxy="false"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>

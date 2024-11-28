@@ -1,0 +1,6 @@
+replyId,city,from,to,number,postcode,region,street,town,name,rate
+1,Barcelona,2024-12-08T00:00:00.000Z,2024-12-09T00:00:00.000Z,589-591,08014,Catalonia,Carrer Vermell,Barcelona,Downtown Hotel,999
+2,Edinburgh,2024-05-02T08:39:36.959Z,2024-05-02T08:39:36.959Z,NULL,EH61 2AB,Scotland,Red Street,Edinburgh,Superior Hotel,234.5
+2,Edinburgh,2024-05-02T08:39:36.959Z,2024-05-02T08:39:36.959Z,107,EH64 3HL,Scotland,Blue Street,Edinburgh,Uptown Hotel,189.6
+2,Edinburgh,2024-05-02T08:39:36.959Z,2024-05-02T08:39:36.959Z,53,EH62 2DG,Scotland,Green Street,Edinburgh,Global Hotel,200
+3,London,2024-05-02T08:39:42.513Z,2024-05-02T08:39:42.513Z,53,EH62 2DG,England,Green Street,London,Global Hotel,200

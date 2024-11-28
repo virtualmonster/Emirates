@@ -1,0 +1,5 @@
+"replyId","city","from","to","number","postcode","region","street","town","name","rate"
+"1","London","2023-03-14T12:30:06.478Z","2023-03-14T12:30:06.478Z","NULL","NULL","NULL","NULL","NULL","NULL","NULL"
+"2","Edinburgh","2023-03-14T12:30:18.040Z","2023-03-14T12:30:18.040Z","NULL","EH61 2AB","Scotland","Red Street","Edinburgh","Superior Hotel","234.5"
+"2","Edinburgh","2023-03-14T12:30:18.040Z","2023-03-14T12:30:18.040Z","107","EH64 3HL","Scotland","Blue Street","Edinburgh","Uptown Hotel","189.6"
+"2","Edinburgh","2023-03-14T12:30:18.040Z","2023-03-14T12:30:18.040Z","53","EH62 2DG","Scotland","Green Street","Edinburgh","Global Hotel","200.0"

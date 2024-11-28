@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1702041686710"
+    createdUser="STUART.WALKER" id="-4ed66186:18c3b5e68b4:-15e2"
+    selfDescribing="Identity Store [%%PROJECT/ROOT_DIRECTORY%%/stuartsIdentityForDEV.jks]"
+    type="identity_store_resource" updatedTimestamp="1702041686710"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig
+        keystoreUrl="%%PROJECT/ROOT_DIRECTORY%%/stuartsIdentityForDEV.jks" password="#com.ghc.1!bf6240E621187E15129B4ACB4463">
+        <KeyAliases entry0="ou=192.168.56.2.nip.io ca, o=192.168.56.2.nip.io"/>
+        <KeyPasswords entry0="#com.ghc.1!d56b"/>
+    </resourceConfig>
+</editableResource>

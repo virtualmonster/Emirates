@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1689942310729"
+    createdUser="STUART.WALKER" id="13b9e226:1896a30083d:2965"
+    references="4421d091:169cb1941b6:53e5" type="db_test_data"
+    updatedTimestamp="1689943899502" updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true"
+        inputData="DB2INST1.RESERVATION" isQueryBased="false"
+        loop="false" treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue="">
+        <logicaldbserverid id="4421d091:169cb1941b6:53e5"
+            lkname="db2 vbdatabase 50000 vbooking"
+            lkpath="VBServices/db2 vbdatabase 50000 vbooking" type="infrastructure_component_resource"/>
+    </resourceConfig>
+</editableResource>

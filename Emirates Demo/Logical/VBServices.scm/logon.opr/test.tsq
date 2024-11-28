@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1697561581907"
+    createdUser="STUART.WALKER" id="-5e72a95d:18b3e8dc8c4:-7d83"
+    references="4421d091:169cb1941b6:53e5" type="test_resource"
+    updatedTimestamp="1697641112189" updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-5e72a95d:18b3e8dc8c4:-7035"
+                selfDescribing="Compares two logical file sources (both of which may be directories containing files) containing record data according to the configuration you set-up."
+                type="file_compare_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    name="[CRRIT3628E] -NO FILE CONTENT DEFINED- against [CRRIT3628E] -NO FILE CONTENT DEFINED-"
+                    reportingMissinLeft="false" reportingMissingRight="false">
+                    <leftSource filePath=""/>
+                    <rightSource filePath=""/>
+                    <logging config="BASIC" filename="false"
+                        rowsAfterFilter="false" rowsBeforeFilter="false"
+                        rowsMissingInLhs="false"
+                        rowsMissingInRhs="false" rowsWithDifferences="true"/>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-5e72a95d:18b3e8dc8c4:-7d3f"
+                selfDescribing="Specify commands, scripts or programs to execute, either locally or on a remote machine.  Optionally specify assertions on the output and/or store it into tags."
+                type="run_command_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig command="dir" description=""
+                    encoding="UTF-8" killAfter="Test"
+                    killProcess="false"
+                    name=" as sdk on 10.1.2.3: &quot;dir&quot;"
+                    timeout="" waitUntilComplete="true">
+                    <remote connectionType="LOCAL" host="10.1.2.3"
+                        password="#com.ghc.1!73f3A2EE7262117555300CBB"
+                        user="sdk" userType="IDENTITY" workingDir=""/>
+                    <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction enabled="false" type="0"/>
+                        </fieldAction>
+                        <fieldAction
+                            description="Store copy of field 'stdout' in tag 'stdout'"
+                            tN="stdout" type="2">
+                            <dataAction type="Copy"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                    <stdErrFieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction enabled="false" type="0"/>
+                        </fieldAction>
+                    </stdErrFieldActionGroup>
+                    <exitCodeFieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction enabled="false" type="0"/>
+                        </fieldAction>
+                    </exitCodeFieldActionGroup>
+                    <executeUser enabled="false" method="SU"/>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-5e72a95d:18b3e8dc8c4:-7cf7"
+                selfDescribing="Execute a function and optionally tag the results. Use predefined functions, custom plug-ins and tagged data."
+                type="function_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description=""
+                    eval_type="Chai Mozilla Rhino" function="" name="-NO FUNCTION DEFINED-"/>
+            </editableResource>
+            <editableResource id="-5e72a95d:18b3e8dc8c4:-7d24"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true" loggingMessage="%%stdout%%"
+                    name="%%stdout%%" outputFile="" role="0"/>
+            </editableResource>
+            <editableResource id="-5e72a95d:18b3e8dc8c4:-7976"
+                references="4421d091:169cb1941b6:53e5"
+                selfDescribing="The SQL Command action is used for executing the Data Manipulation Language statements INSERT, UPDATE, and DELETE against the selected database connection. If desired, the number of rows affected may be validated or stored into a tag."
+                type="sql_command_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig callableStatement="false" description=""
+                    isAutoCommit="true"
+                    name="&quot;select x from y where z = %%stdout%%&quot;"
+                    sqlStatement="select x from y where z = %%stdout%%" timeOffset="0">
+                    <dbserverid id="4421d091:169cb1941b6:53e5"
+                        lkname="db2 vbdatabase 50000 vbooking"
+                        lkpath="VBServices/db2 vbdatabase 50000 vbooking" type="infrastructure_component_resource"/>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="" description="" name="stdout"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

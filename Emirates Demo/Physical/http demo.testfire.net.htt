@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1648140744149"
+    createdUser="STUART.WALKER"
+    id="41a0f98d:17fb653a453:-32b2:-1617612125:1544155186"
+    selfDescribing="http demo.testfire.net" type="http_transport"
+    updatedTimestamp="1648140744149" updatedUser="STUART.WALKER" version="1.0">
+    <syncdetails compare="PHYSICALHTTPdemo.testfire.net"
+        lastSynced="1648140744149" sourceid="41a0f98d:17fb653a453:-32b2">
+        <sourcepath path="HTTP"/>
+        <sourcepath path="demo.testfire.net"/>
+    </syncdetails>
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain=""
+            credPassword="#com.ghc.1!9d02" credPreemptive="false"
+            credType="0" credUser="" httpHost="demo.testfire.net"
+            httpNtlmDomain="" httpPort="80" httpProxyHost=""
+            httpProxyPassword="#com.ghc.1!0b9a" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            useSsl="false" version="4">
+            <kerberos Anon="false" CStyle="Username / Password"
+                Conf="false" Custom="true" Enabled="false" Integ="false"
+                MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

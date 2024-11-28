@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customreport id="-33905a59:17c0a0de032:-5d8a" name="stuarts management report">
+    <segment attach="Attachment" format="PDF" report="DetailedTestSuite"
+        text="Here are the test results from %%SUITE/NAME%%&#xa;The test was run in %%ENVIRONMENT/NAME%%" type="Report"/>
+</customreport>

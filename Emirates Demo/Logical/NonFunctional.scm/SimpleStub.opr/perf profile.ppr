@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1732727688867"
+    createdUser="STUART.WALKER" id="-7b4b073d:1936daded9d:-7150"
+    type="performance_profile_resource" updatedTimestamp="1732727750581"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig _version="1.0" baseDate="1732727688867"
+        delayDistribution="GAUSSIAN" timeUnits="MINUTES">
+        <phase DURATION="60000" MAX="111" MIN="11"/>
+        <phase DURATION="60000" MIN="111"/>
+        <phase exists="true"/>
+        <phase exists="true"/>
+        <phase exists="true"/>
+        <phase exists="true"/>
+        <phase exists="true"/>
+    </resourceConfig>
+</editableResource>

@@ -1,0 +1,4 @@
+replyId,dep,arr,dayofweek,flightNumber,arrivalAirport,departsTime,arrivesTime,price
+1,STN,EDI,6,VB046,EDI,31500000,34200000,333
+2,STN,BCN,6,VB302,BCN,20700000,26400000,999
+3,STN,BLR,6,VB123,BLR,20700000,26400000,999

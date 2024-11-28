@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1655134693832"
+    createdUser="STUART.WALKER" id="ENVIRONMENT_TASKS_ROOT_ID"
+    type="env_tasks_grouping_resource" updatedTimestamp="1655134693851"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+</editableResource>

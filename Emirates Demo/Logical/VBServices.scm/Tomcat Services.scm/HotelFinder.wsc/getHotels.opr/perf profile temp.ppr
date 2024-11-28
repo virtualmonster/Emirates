@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1732727841723"
+    createdUser="STUART.WALKER" id="-7b4b073d:1936daded9d:-70e9"
+    type="performance_profile_resource" updatedTimestamp="1732727841729"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig _version="1.0" baseDate="1732727841723"
+        delayDistribution="FIXED" timeUnits="SECONDS">
+        <phase DURATION="0" MAX="5" MIN="5"/>
+    </resourceConfig>
+</editableResource>

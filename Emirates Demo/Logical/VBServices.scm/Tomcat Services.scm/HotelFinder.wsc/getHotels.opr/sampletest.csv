@@ -1,0 +1,5 @@
+"replyId","city","from","to","number","postcode","region","street","town","name","rate"
+"1","Barcelona","2023-02-17T14:52:48.409Z","2023-02-17T14:52:48.409Z","589-591","08014","Catalonia","Carrer Vermell","Barcelona","Downtown Hotel","235.0"
+"1","Barcelona","2023-02-17T14:52:48.409Z","2023-02-17T14:52:48.409Z","230","08005","Catalonia","Carrer Blau","Barcelona","Global Hotel","189.6"
+"1","Barcelona","2023-02-17T14:52:48.409Z","2023-02-17T14:52:48.409Z","111","08002","Catalonia","Carrer Verd","Barcelona","Superior Hotel","200.0"
+"2","London","2023-02-17T14:52:57.682Z","2023-02-17T14:52:57.682Z","NULL","NULL","NULL","NULL","NULL","NULL","NULL"

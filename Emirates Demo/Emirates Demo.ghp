@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_c buildID="I20240912_0116" certificateAuthority="KEY_1024_BITS"
+    comments="Project created on 27 November 2024"
+    creationVersion="11.0.3" domain="Emirates" extDocPrefix=""
+    name="Emirates Demo" owner="STUART.WALKER"
+    rulesCacheUri="%%PROJECT/ROOT%%Rules"
+    updateResultsDbOnItemChange="false" uuid="00000193-6dad-ec3d-0006-b2a51bad09e8">
+    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <environmentVariable evdescription="" key="blah" value=""/>
+        <environmentVariable evdescription="" key="Database_IP" value="132"/>
+        <environmentVariable evdescription="" key="HQS_IP" value=""/>
+        <environmentVariable evdescription="" key="martins variable" value=""/>
+    </rootEnvironmentConfig>
+    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+    <serverSettings ghRepositoryURL="http://10.10.10.10:7819/RTCP"
+        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!4ac3" trustStorePath="">
+        <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+            <connectionParams ZOSEnv="false"
+                dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+                dpsOption="false" dpsPass="#com.ghc.1!ec34" dpsUser=""
+                driverClass="com.ibm.db2.jcc.DB2Driver"
+                password="#com.ghc.1!33e6128B4ACF446AE348A2E17278117F55240CF06A4140F7211A"
+                url="jdbc:db2://10.0.2.15.nip.io:50000/vresults" user="db2inst1">
+                <dpsSsl useSsl="false"/>
+                <stubSettings maxProcCallCount="10000"
+                    maxResultSetRowCount="10000" maxRowCount="10000"
+                    password="#com.ghc.1!e179"
+                    procedureLearningBehaviour="1" schema="" url=""
+                    useIntegratedDB="true" useSsl="false" user=""/>
+                <storedProcedureFilter catalogFilterEnabled="false"
+                    catalogFilterPattern=""
+                    procedureFilterEnabled="false"
+                    procedureFilterPattern="" schemaFilterEnabled="true"
+                    schemaFilterPattern="db2inst1"
+                    storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+                <timestampFormatting timestampFormatZero="false"
+                    timestampFormattingEnabled="false" timestampPrecision="9"/>
+                <proxy useProxy="false"/>
+            </connectionParams>
+        </dbConnectionParameters>
+        <automationServer enabled="false" projectId="1150"
+            projectName="Emerald" publishResults="true"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!bf12"
+            trustStorePath="" url="https://10.0.2.15.nip.io:443"/>
+    </serverSettings>
+    <permissionsSettings ADtrustSource="NONE"
+        ADtrustStorePassword="#com.ghc.1!941a" ADtrustStorePath=""
+        autoLogin="true" host="AP-PNP-DC02"
+        permFactId="ldap.permissions.factory.none" port="389" pswd="2jmj7l5rSw0yVb/vlWAYkK/YBwk="/>
+    <resultPublishers disableAll="false">
+        <publisher enabled="true"
+            from="reportpublisher@integration.tester.com" host="c\cx"
+            name="xzzx" password="#com.ghc.1!a9fd"
+            subject="Test %%SUITE/RESULT%% in %%SUITE/NAME%%"
+            type="EMAIL" user=""/>
+    </resultPublishers>
+    <publishedResourceInfo>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="1" vMinor="0">
+            <resource id="LOGICAL_ROOT_ID"/>
+        </info>
+        <info domain="VacationBooking"
+            serverUrl="https://us-devops-swat:7443/RTCP" vMajor="1" vMinor="0">
+            <resource id="4421d091:16971ded625:-7db6:-817575104:-807255066"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10:5443/RTCP" vMajor="1" vMinor="0">
+            <resource id="-2ac3f665:16a2922ab96:-2bec"/>
+            <resource id="28e4ffe5:18920fe38cc:1547"/>
+            <resource id="-1817bcdc:16d8f2c9ff6:-7b08"/>
+            <resource id="725c2c54:16c035ae41c:-67fb"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="1" vMinor="1">
+            <resource id="4421d091:16971ded625:-8d6"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="http://10.10.10.10:7819/RTCP" vMajor="2" vMinor="0">
+            <resource id="94f2d41:1926a7aa30c:-4214"/>
+            <resource id="94f2d41:1926a7aa30c:-4290"/>
+            <resource id="94f2d41:1926a7aa30c:-4271"/>
+            <resource id="94f2d41:1926a7aa30c:-4252"/>
+            <resource id="94f2d41:1926a7aa30c:-41f5"/>
+            <resource id="94f2d41:1926a7aa30c:-4233"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="http://10.10.10.10:7819/RTCP" vMajor="1" vMinor="0">
+            <resource id="94f2d41:1926c6c763e:-42a"/>
+        </info>
+        <info domain="VacationBooking"
+            serverUrl="https://us-devops-swat:7443/RTCP" vMajor="1" vMinor="0">
+            <resource id="-2ac3f665:16a2922ab96:-2bec"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="3" vMinor="0">
+            <resource id="-1817bcdc:16d8f2c9ff6:-7b08"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="3" vMinor="1">
+            <resource id="-3ba60fce:18927d4e6fd:-4dd6"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10:5443/RTCP" vMajor="1" vMinor="0">
+            <resource id="-2ac3f665:16a2922ab96:-2bec"/>
+            <resource id="-1817bcdc:16d8f2c9ff6:-7b08"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10:5443/RTCP" vMajor="1" vMinor="0">
+            <resource id="725c2c54:16c035ae41c:-67fb"/>
+        </info>
+        <info domain="default"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="1" vMinor="0">
+            <resource id="4421d091:169cb1941b6:53e5"/>
+        </info>
+        <info domain="APIDomain"
+            serverUrl="https://10.10.10.10.nip.io:5443/RTCP" vMajor="2" vMinor="0">
+            <resource id="-13424e68:16b79e57614:-3385"/>
+        </info>
+    </publishedResourceInfo>
+</_c>

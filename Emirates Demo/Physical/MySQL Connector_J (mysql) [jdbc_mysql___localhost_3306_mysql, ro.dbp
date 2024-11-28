@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1731584969224"
+    createdUser="STUART.WALKER" id="-d26fb4:19329de88d7:-570b"
+    selfDescribing="MySQL Connector/J (mysql) [jdbc:mysql://localhost:3306/mysql, root]"
+    type="database_connection_resource" updatedTimestamp="1731585023935"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="mysql">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsOption="false" dpsPass="#com.ghc.1!1243" dpsUser=""
+            driverClass="com.mysql.cj.jdbc.Driver"
+            password="#com.ghc.1!2d3b6A4340EF21117E07" schema=""
+            url="jdbc:mysql://localhost:3306/mysql" useSsl="false" user="root">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!0e45"
+                procedureLearningBehaviour="1" schema=""
+                url="jdbc:mysql://localhost:3306/&lt;database name>"
+                useIntegratedDB="true" useSsl="false" user=""/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+            <proxy proxyType="tcp.proxy.k8s" useProxy="false"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>

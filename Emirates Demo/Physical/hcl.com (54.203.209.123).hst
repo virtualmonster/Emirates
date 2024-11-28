@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1651572969936"
+    createdUser="STUART.WALKER" id="-dcc8e09:18076f45ae8:-500e"
+    selfDescribing="hcl.com (54.203.209.123)"
+    type="host_machine_resource" updatedTimestamp="1651572969936"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="54.203.209.123" user_host_name="hcl.com">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

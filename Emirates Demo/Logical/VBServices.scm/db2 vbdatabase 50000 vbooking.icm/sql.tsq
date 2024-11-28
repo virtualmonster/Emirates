@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1713811331243"
+    createdUser="STUART.WALKER" id="19ecb031:18ef68234bc:1fa1"
+    references="4421d091:169cb1941b6:53e5" type="test_resource"
+    updatedTimestamp="1713811355860" updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="19ecb031:18ef68234bc:1fcb"
+                references="4421d091:169cb1941b6:53e5"
+                selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button."
+                type="sql_query_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig assertCellResults="false"
+                    assertColumnResults="false"
+                    callableStatement="false" description=""
+                    interval="0"
+                    name="&quot;select * from reservation&quot;"
+                    repeat="false"
+                    sqlStatement="select * from reservation"
+                    timeOffset="0" timeout="0" validateTypes="false">
+                    <dbserverid id="4421d091:169cb1941b6:53e5"
+                        lkname="db2 vbdatabase 50000 vbooking"
+                        lkpath="VBServices/db2 vbdatabase 50000 vbooking" type="infrastructure_component_resource"/>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

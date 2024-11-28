@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1732559834607"
+    createdUser="STUART.WALKER" id="-fabd1cd:1936422bdf3:6ac"
+    references="-fabd1cd:1936422bdf3:6b2,-13424e68:16b79e57614:-430d,4421d091:16971ded625:-8b1"
+    type="stub_resource" updatedTimestamp="1732560083539"
+    updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-fabd1cd:1936422bdf3:6b7"
+                references="4421d091:16971ded625:-8b1"
+                selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions"
+                type="message_switch_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="on resource &quot;/com.vbooking.flights.rest/rest/flights/&quot; via &quot;websphere 9080&quot;"
+                    src="-13424e68:16b79e57614:-5041" transport="4421d091:16971ded625:-8b1">
+                    <settings MessageType="http.text.message.type"
+                        Method="GET"
+                        URL="/com.vbooking.flights.rest/rest/flights/"
+                        _version="1.1" allowSubPath="true"
+                        consumerType="Participate" filterHeaders="false"
+                        filterMethod="true" filterResourcePath="true"/>
+                    <passThrough behaviour="DELAY"
+                        componentId="-13424e68:16b79e57614:-5041"
+                        componentType="OPERATION" templateType="http_transport">
+                        <DELAY delayPeriod="0"/>
+                    </passThrough>
+                    <cases>
+                        <editableResource id="-fabd1cd:1936422bdf3:6bb"
+                            references="-13424e68:16b79e57614:-430d"
+                            selfDescribing="Configure the filtering and validation for this Case action"
+                            type="message_case_action" version="1.0">
+                            <loggingConfiguration debug="false"
+                                resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                            <resourceConfig description="" name="&quot;Text&quot; using schema &quot;Text&quot;">
+                                <FilterExpressions option="EXISTS"
+                                    script="exists()" type="script:ECMAScript"/>
+                                <bodyfilters assocdefid="Text"
+                                    name="Text" sch="Text" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c coreTypeInt="7"
+                                    coreTypeName="String"
+                                    name="text"
+                                    nodeFormatter="rest_nodeformatter"
+                                    sch="Text" type="12" version="1.2">
+                                    <fieldExpander
+                                    fieldExpanderID="rest_fieldexpander"
+                                    fieldSchema="-13424e68:16b79e57614:-430d" fieldSchemaRoot="GetFlightRoute"/>
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="7"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c assocdefid="GetFlightRoute"
+                                    name="GetFlightRoute"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="true" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="10"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    <_c name="dep"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'dep'"
+                                    tN="dep" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c name="arr"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'arr'"
+                                    tN="arr" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c name="dayofweek"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'dayofweek'"
+                                    tN="dayofweek" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c name="body"
+                                    optional="true"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c name="text"
+                                    sch="-13424e68:16b79e57614:-430d"
+                                    type="7" version="1.2"/>
+                                    </_c>
+                                    </_c>
+                                    </_c>
+                                </bodyfilters>
+                                <headerfilters
+                                    assocdefid="Http Subscribe"
+                                    meTy="Message" name=""
+                                    sch="Http Subscribe" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Method"
+                                    sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="GET" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="String" name="URL"
+                                    sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="/com.vbooking.flights.rest/rest/flights/?dep={dep}&amp;arr={arr}&amp;dayofweek={dayofweek}" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpDetails"
+                                    sch="Http Subscribe" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Version"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpHeaders"
+                                    sch="Http Subscribe"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String"
+                                    name="Pragma"
+                                    sch="Http Subscribe"
+                                    type="7" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="no-cache" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    </_c>
+                                    </_c>
+                                    <_c meTy="String" name="MessageType"
+                                    sch="Http Subscribe" type="7" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Date-Time"
+                                    name="rcvdTimestamp"
+                                    sch="Http Subscribe" type="11" version="1.2">
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="18:04:29.973 2024/11/25" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                </headerfilters>
+                                <childActions>
+                                    <editableResource
+                                    id="-fabd1cd:1936422bdf3:6bc"
+                                    references="-fabd1cd:1936422bdf3:6b2"
+                                    selfDescribing="Use a value from the current run to extract information from a test data set."
+                                    type="test_data_lookup_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false"
+                                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                                    <resourceConfig description="" name="Search &quot;getflights&quot; in &quot;arr&quot; and in &quot;dayofweek&quot; and in &quot;dep&quot;">
+                                    <true
+                                    id="-fabd1cd:1936422bdf3:6bd"
+                                    selfDescribing="Found"
+                                    type="test_data_lookup_path_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false"
+                                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    description=""
+                                    name=" (2)" path="0">
+                                    <editableResource
+                                    id="-fabd1cd:1936422bdf3:6bf"
+                                    selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send."
+                                    type="send_reply_action" version="1.0">
+
+                                    <loggingConfiguration
+                                    debug="false"
+                                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    description=""
+                                    formatter="HTTP_Message"
+                                    name="&quot;Text&quot; using schema &quot;Text&quot; (2)" receiverequestid="-fabd1cd:1936422bdf3:6b7">
+
+                                    <replyHeaderMessage
+                                    assocdefid="Http Send Reply"
+                                    meTy="Message"
+                                    name=""
+                                    sch="Http Send Reply"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c
+                                    meTy="String"
+                                    name="StatusCode"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="200" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="200" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="200" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c
+                                    meTy="String"
+                                    name="ReasonPhrase"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="OK" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="OK" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="OK" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c
+                                    meTy="String"
+                                    name="MessageType"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="http.text.message.type" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c
+                                    meTy="Message"
+                                    name="httpDetails"
+                                    sch="Http Send Reply"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c
+                                    meTy="String"
+                                    name="Version"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="1.1" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c
+                                    meTy="Message"
+                                    name="httpHeaders"
+                                    sch="Http Send Reply"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+
+                                    <_c
+                                    meTy="String"
+                                    name="X-Powered-By"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="Servlet/3.1" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="Servlet/3.1" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="Servlet/3.1" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+
+                                    <_c
+                                    meTy="String"
+                                    name="Content-Type"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="application/json" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="application/json" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="application/json" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+
+                                    <_c
+                                    meTy="String"
+                                    name="Content-Language"
+                                    sch="Http Send Reply"
+                                    type="7"
+                                    value="en-US" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="en-US" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="en-US" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    </_c>
+                                    </replyHeaderMessage>
+
+                                    <replyMessage
+                                    assocdefid="Text"
+                                    name="Text"
+                                    sch="Text"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c
+                                    coreTypeInt="7"
+                                    coreTypeName="String"
+                                    name="text"
+                                    nodeFormatter="JSON.nodeformatter"
+                                    sch="Text"
+                                    type="12" version="1.2">
+
+                                    <fieldExpander
+                                    fieldExpanderID="JSON.fieldexpander"
+                                    fieldSchema="JSON" fieldSchemaRoot="Array">
+
+                                    <property
+                                    name="Format" value="0"/>
+                                    </fieldExpander>
+                                    <contentTree>[{"flightNumber":"%%flightNumber%%","weekNumber":0,"dayOfWeek":6,"departureAirport":"STN","arrivalAirport":"%%arrivalAirport%%","departsTime":0,"arrivesTime":0,"price":0,"totalSeats":0}]<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction type="100"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false" type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                    </defaultActions>
+                                    <updates>
+
+                                    <updateField path="/text/Array">
+
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+
+                                    <updateField path="/text/Array/0">
+
+                                    <_c name="0"/>
+                                    </updateField>
+
+                                    <setAction
+                                    index="5"
+                                    path="/text/Array/0/departsTime"
+                                    replaceActionType="0" replaceOuterType="1">
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="%%departsTime%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+
+                                    <setAction
+                                    index="5"
+                                    path="/text/Array/0/departsTime"
+                                    replaceActionType="0" replaceOuterType="0">
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="%%departsTime%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+
+                                    <setAction
+                                    index="6"
+                                    path="/text/Array/0/arrivesTime"
+                                    replaceActionType="0" replaceOuterType="1">
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="%%arrivesTime%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+
+                                    <setAction
+                                    index="6"
+                                    path="/text/Array/0/arrivesTime"
+                                    replaceActionType="0" replaceOuterType="0">
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="%%arrivesTime%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+
+                                    <setAction
+                                    index="7"
+                                    path="/text/Array/0/price"
+                                    replaceActionType="0" replaceOuterType="1">
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="%%price%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+
+                                    <setAction
+                                    index="7"
+                                    path="/text/Array/0/price"
+                                    replaceActionType="0" replaceOuterType="0">
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction
+                                    exp="%%price%%" type="0"/>
+                                    </fieldAction>
+                                    </setAction>
+                                    </updates>
+                                    </contentTree>
+                                    <fieldActionGroup>
+
+                                    <fieldAction type="0">
+
+                                    <fieldAction type="4"/>
+                                    </fieldAction>
+
+                                    <fieldAction
+                                    enabled="false" type="1">
+
+                                    <fieldAction
+                                    enabled="false" type="7"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </replyMessage>
+                                    </resourceConfig>
+                                    </editableResource>
+                                    </resourceConfig>
+                                    </true>
+                                    <false
+                                    id="-fabd1cd:1936422bdf3:6be"
+                                    selfDescribing="Not Found"
+                                    type="test_data_lookup_path_action" version="1.0">
+                                    <loggingConfiguration
+                                    debug="false"
+                                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                                    <resourceConfig
+                                    description=""
+                                    name=" (3)" path="1"/>
+                                    </false>
+                                    <props allMatches="false">
+                                    <tdsref
+                                    id="-fabd1cd:1936422bdf3:6b2"
+                                    lkname="getflights"
+                                    lkpath="VBServices/WebSphere REST Services/GET Flight/getflights" type="simple_test_data"/>
+                                    <lookups column="arr" lookupValue="%%arr%%"/>
+                                    <lookups column="dep" lookupValue="%%dep%%"/>
+                                    </props>
+                                    <mapper
+                                    disableFiltersWhenEmpty="false"
+                                    knownColumns="arr,price,replyId,dayofweek,departsTime,arrivalAirport,dep,flightNumber,arrivesTime" noAutoMap="">
+                                    <mapping
+                                    columnName="arr"
+                                    tagName="arr" type="4"/>
+                                    <mapping
+                                    columnName="arrivalAirport"
+                                    tagName="arrivalAirport" type="4"/>
+                                    <mapping
+                                    columnName="arrivesTime"
+                                    tagName="arrivesTime" type="4"/>
+                                    <mapping
+                                    columnName="dayofweek"
+                                    tagName="dayofweek" type="4"/>
+                                    <mapping
+                                    columnName="dep"
+                                    tagName="dep" type="4"/>
+                                    <mapping
+                                    columnName="departsTime"
+                                    tagName="departsTime" type="4"/>
+                                    <mapping
+                                    columnName="flightNumber"
+                                    tagName="flightNumber" type="4"/>
+                                    <mapping
+                                    columnName="price"
+                                    tagName="price" type="4"/>
+                                    </mapper>
+                                    </resourceConfig>
+                                    </editableResource>
+                                </childActions>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource id="-fabd1cd:1936422bdf3:6b8"
+                            type="default_case_action" version="1.0">
+                            <loggingConfiguration debug="false"
+                                resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                            <resourceConfig description="" name=" (2)"/>
+                        </editableResource>
+                    </cases>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore identifier="-fabd1cd:1936422bdf3:b91"
+            inputMode="NONE" outputMode="NONE">
+            <tag description="Generated by Recording Studio" name="dep"/>
+            <tag description="Generated by Recording Studio" name="price"/>
+            <tag description="Generated by Recording Studio" name="flightNumber"/>
+            <tag description="Generated by Recording Studio" name="arrivalAirport"/>
+            <tag description="Generated by Recording Studio" name="arrivesTime"/>
+            <tag description="Generated by Recording Studio" name="arr"/>
+            <tag description="Generated by Recording Studio" name="departsTime"/>
+            <tag description="Generated by Recording Studio" name="dayofweek"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+        <stubprops behaviourStyle="ONE_TO_ONE"
+            includeContractValidationOption="false" majorVersion="1"
+            messageClearance="false" minorVersion="0" optimise="false"
+            sendErrorResponseOption="false" wrks="10">
+            <responseTimeTable>
+                <entry key="-13424e68:16b79e57614:-5041">
+                    <value type="NO_DELAY"/>
+                </entry>
+            </responseTimeTable>
+            <environmentTasks preventExecutionOnFailure="false"/>
+        </stubprops>
+        <Session mode="NONE"/>
+    </resourceConfig>
+</editableResource>

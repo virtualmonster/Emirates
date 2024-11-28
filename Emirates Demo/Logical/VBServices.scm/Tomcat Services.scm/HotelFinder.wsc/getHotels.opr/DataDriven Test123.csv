@@ -1,0 +1,6 @@
+replyId,city,from,to,number,postcode,region,street,town,name,rate
+1,Edinburgh,2023-12-08T14:32:26.829Z,2023-12-08T14:32:26.829Z,NULL,EH61 2AB,Scotland,Red Street,Edinburgh,Superior Hotel,234.5
+1,Edinburgh,2023-12-08T14:32:26.829Z,2023-12-08T14:32:26.829Z,107,EH64 3HL,Scotland,Blue Street,Edinburgh,Uptown Hotel,189.6
+1,Edinburgh,2023-12-08T14:32:26.829Z,2023-12-08T14:32:26.829Z,53,EH62 2DG,Scotland,Green Street,Edinburgh,Global Hotel,200
+2,London,2023-12-08T14:32:36.810Z,2023-12-08T14:32:36.810Z,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+3,Frankfurt,2023-12-08T14:32:48.133Z,2023-12-08T14:32:48.133Z,107,EH64 3HL,Scotland,Blue Street,Frankfurt,Uptown Hotel,189.6
