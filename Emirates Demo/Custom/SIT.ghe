@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1573735739283"
     createdUser="STUART.WALKER" id="706c8800:16e6982c758:-7236"
-    type="environment_resource" updatedTimestamp="1731584969224"
+    type="environment_resource" updatedTimestamp="1732878872398"
     updatedUser="STUART.WALKER" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
@@ -25,6 +25,7 @@
             <evbinding evLogicalItemId="4421d091:16971ded625:-8b1" evPhysicalItemId="706c8800:16e6982c758:-7096"/>
             <evbinding evLogicalItemId="4421d091:16971ded625:-8c9" evPhysicalItemId="706c8800:16e6982c758:-7119"/>
             <evbinding evLogicalItemId="4421d091:169cb1941b6:53e5" evPhysicalItemId="706c8800:16e6982c758:-70e4"/>
+            <evbinding evLogicalItemId="77b8a7bc:193772176e2:-7d23" evPhysicalItemId="77b8a7bc:193772176e2:-7d1e"/>
             <evbinding
                 evLogicalItemId="94f2d41:1926c6c763e:243:1731931949:408339756" evPhysicalItemId="94f2d41:1926c6c763e:243:-1600560688:1544155186"/>
         </evbindings>
