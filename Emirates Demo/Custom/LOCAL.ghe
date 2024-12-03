@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1646150969330"
     createdUser="STUART.WALKER" id="-69edaae0:17f4639f5d3:-7d2c"
-    type="environment_resource" updatedTimestamp="1733142548704"
+    type="environment_resource" updatedTimestamp="1733217401971"
     updatedUser="STUART.WALKER" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="true" overridingSecretsNamespace="SecretStuff">
@@ -11,6 +11,7 @@
         <evbindings>
             <evbinding evLogicalItemId="-13424e68:16b79e57614:-2818" evPhysicalItemId="706c8800:16e6982c758:-7052"/>
             <evbinding evLogicalItemId="-13424e68:16b79e57614:-5bde" evPhysicalItemId="706c8800:16e6982c758:-70b1"/>
+            <evbinding evLogicalItemId="-1987b9b6:1938761c205:-19db" evPhysicalItemId="-1987b9b6:1938761c205:-19da"/>
             <evbinding evLogicalItemId="-2e526b70:186e010d0fd:-2733" evPhysicalItemId="-2e526b70:186e010d0fd:-2732"/>
             <evbinding evLogicalItemId="-4ed66186:18c3b5e68b4:-14e9" evPhysicalItemId="-4ed66186:18c3b5e68b4:-14e8"/>
             <evbinding evLogicalItemId="-4ed66186:18c3b5e68b4:-1549" evPhysicalItemId="-4ed66186:18c3b5e68b4:-1548"/>

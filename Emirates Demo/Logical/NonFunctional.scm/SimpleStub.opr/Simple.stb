@@ -2,7 +2,7 @@
 <editableResource createdTimestamp="1732712591686"
     createdUser="STUART.WALKER" id="-7b4b073d:1936daded9d:-7a41"
     references="-7b4b073d:1936daded9d:-7aec" type="stub_resource"
-    updatedTimestamp="1732713117423" updatedUser="STUART.WALKER" version="1.1">
+    updatedTimestamp="1733245933326" updatedUser="STUART.WALKER" version="1.1">
     <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
     <resourceConfig description="" name="">
         <testTree>
@@ -16,9 +16,9 @@
                     name="via &quot;SimpleStub&quot;"
                     src="-7b4b073d:1936daded9d:-7af9" transport="-7b4b073d:1936daded9d:-7aec">
                     <settings MessageType="http.text.message.type"
-                        Method="POST" URL="" _version="1.1"
-                        consumerType="Participate" filterHeaders="false"
-                        filterMethod="true" filterResourcePath="false"/>
+                        Method="GET" URL="" _version="1.1"
+                        allowSubPath="false" consumerType="Participate"
+                        filterHeaders="false" filterMethod="true" filterResourcePath="false"/>
                     <passThrough behaviour="SIMULATE_ERROR"
                         componentId="-7b4b073d:1936daded9d:-7af9"
                         componentType="OPERATION" templateType="http_transport">
@@ -44,82 +44,15 @@
                                     ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                     </fieldActionGroup>
-                                    <_c coreTypeInt="7"
-                                    coreTypeName="String"
+                                    <_c contentTypeID="text/plain"
                                     name="text"
                                     nodeFormatter="JSON.nodeformatter"
-                                    sch="Text" type="12" version="1.2">
-                                    <fieldExpander
-                                    fieldExpanderID="JSON.fieldexpander"
-                                    fieldSchema="JSON" fieldSchemaRoot="Object">
-                                    <property name="Format" value="1"/>
-                                    </fieldExpander>
-                                    <contentTree>{&#xd;
-  "transactionId" : "TXN123456",&#xd;
-  "amount" : 250.0,&#xd;
-  "currency" : "USD",&#xd;
-  "paymentMethod" : "CREDIT_CARD",&#xd;
-  "paxDetails" : {&#xd;
-    "name" : "John Doe",&#xd;
-    "email" : "john.doe@example.com"&#xd;
-  }&#xd;
-}<defaultActions>
-                                    <defaultMessageActions>
-                                    <fieldActionGroup>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    anyOrder="false"
-                                    enabled="false"
-                                    ignoreExtra="false"
-                                    ignoreNonPresent="false" type="100"/>
-                                    </fieldAction>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false" type="5"/>
-                                    </fieldAction>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false"
-                                    type="6"
-                                    typeActionAllType="true" typeActionMetaType="false"/>
-                                    </fieldAction>
-                                    </fieldActionGroup>
-                                    </defaultMessageActions>
-                                    <defaultScalarActions>
-                                    <fieldActionGroup>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false" type="0"/>
-                                    </fieldAction>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false" type="5"/>
-                                    </fieldAction>
-                                    <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false"
-                                    type="6"
-                                    typeActionAllType="true" typeActionMetaType="false"/>
-                                    </fieldAction>
-                                    </fieldActionGroup>
-                                    </defaultScalarActions>
-                                    </defaultActions>
-                                    <updates>
-                                    <updateField path="/text/Object">
-                                    <_c assocdefid="Object"/>
-                                    </updateField>
-                                    </updates>
-                                    </contentTree>
+                                    sch="Text" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction
-                                    enabled="false" type="7"/>
+                                    enabled="false"
+                                    exp="{&#xd;&#xa;  &quot;transactionId&quot; : &quot;TXN123456&quot;,&#xd;&#xa;  &quot;amount&quot; : 250.0,&#xd;&#xa;  &quot;currency&quot; : &quot;USD&quot;,&#xd;&#xa;  &quot;paymentMethod&quot; : &quot;CREDIT_CARD&quot;,&#xd;&#xa;  &quot;paxDetails&quot; : {&#xd;&#xa;    &quot;name&quot; : &quot;John Doe&quot;,&#xd;&#xa;    &quot;email&quot; : &quot;john.doe@example.com&quot;&#xd;&#xa;  }&#xd;&#xa;}" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                     </_c>
@@ -302,104 +235,15 @@
                                     ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                     </fieldActionGroup>
-                                    <_c coreTypeInt="7"
-                                    coreTypeName="String"
+                                    <_c
+                                    contentTypeID="text/plain"
                                     name="text"
                                     nodeFormatter="JSON.nodeformatter"
-                                    sch="Text" type="12" version="1.2">
-                                    <fieldExpander
-                                    fieldExpanderID="JSON.fieldexpander"
-                                    fieldSchema="JSON" fieldSchemaRoot="Object">
-                                    <property
-                                    name="Format" value="1"/>
-                                    </fieldExpander>
-                                    <contentTree>{&#xd;
-  "transactionId" : "TXN123456",&#xd;
-  "status" : "SUCCESS",&#xd;
-  "approvalCode" : "APPROVED123"&#xd;
-}<defaultActions>
-                                    <defaultMessageActions>
-                                    <fieldActionGroup>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    anyOrder="false"
-                                    enabled="false"
-                                    ignoreExtra="false"
-                                    ignoreNonPresent="false" type="100"/>
-                                    </fieldAction>
-
-                                    <fieldAction type="0">
-
-                                    <fieldAction type="100"/>
-                                    </fieldAction>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    enabled="false" type="5"/>
-                                    </fieldAction>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    enabled="false"
-                                    type="6"
-                                    typeActionAllType="true" typeActionMetaType="false"/>
-                                    </fieldAction>
-                                    </fieldActionGroup>
-                                    </defaultMessageActions>
-                                    <defaultScalarActions>
-                                    <fieldActionGroup>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    enabled="false" type="0"/>
-                                    </fieldAction>
-
-                                    <fieldAction type="0">
-
-                                    <fieldAction type="0"/>
-                                    </fieldAction>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    enabled="false" type="5"/>
-                                    </fieldAction>
-
-                                    <fieldAction
-                                    enabled="false" type="1">
-
-                                    <fieldAction
-                                    enabled="false"
-                                    type="6"
-                                    typeActionAllType="true" typeActionMetaType="false"/>
-                                    </fieldAction>
-                                    </fieldActionGroup>
-                                    </defaultScalarActions>
-                                    </defaultActions>
-                                    <updates>
-                                    <updateField path="/text/Object">
-                                    <_c assocdefid="Object"/>
-                                    </updateField>
-                                    </updates>
-                                    </contentTree>
+                                    sch="Text" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction type="0">
-                                    <fieldAction type="4"/>
-                                    </fieldAction>
                                     <fieldAction
-                                    enabled="false" type="1">
-                                    <fieldAction
-                                    enabled="false" type="7"/>
+                                    exp="{&#xd;&#xa;  &quot;transactionId&quot; : &quot;TXN123456&quot;,&#xd;&#xa;  &quot;status&quot; : &quot;SUCCESS&quot;,&#xd;&#xa;  &quot;approvalCode&quot; : &quot;APPROVED123&quot;&#xd;&#xa;}" type="0"/>
                                     </fieldAction>
                                     </fieldActionGroup>
                                     </_c>
