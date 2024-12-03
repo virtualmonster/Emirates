@@ -2,8 +2,9 @@
 <editableResource createdTimestamp="1732712591686"
     createdUser="STUART.WALKER" id="-7b4b073d:1936daded9d:-7a41"
     references="-7b4b073d:1936daded9d:-7aec" type="stub_resource"
-    updatedTimestamp="1733245933326" updatedUser="STUART.WALKER" version="1.1">
-    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    updatedTimestamp="1733248333790" updatedUser="STUART.WALKER" version="1.1">
+    <loggingConfiguration debug="false"
+        resultWriterLoggingLevel="SUMMARY" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
         <testTree>
             <editableResource id="-7b4b073d:1936daded9d:-7a3f"
@@ -264,7 +265,7 @@
                 </resourceConfig>
             </editableResource>
         </testTree>
-        <tagDataStore identifier="-7b4b073d:1936daded9d:-7840"
+        <tagDataStore identifier="1ddc2759:1938cf68a09:-3ed6"
             inputMode="NONE" outputMode="NONE"/>
         <testprops messageClearance="false"/>
         <stubprops behaviourStyle="ONE_TO_ONE"
