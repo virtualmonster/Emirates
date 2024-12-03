@@ -356,7 +356,7 @@ Rate Runner Group 1
     properties: 
       description: 'Stages:
 
-	users=500; duration=5 minutes
+	users=1000; duration=5 minutes
 
 User Group 1: Group Size 100.0 percent
 
